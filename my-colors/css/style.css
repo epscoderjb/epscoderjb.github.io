@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(178, 90, 87);
+}
+
+.container {
+    width: 1140px;
+    background-color: rgb(144, 165, 92);
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+}
+
+.primarycolor {
+    color: rgb(178, 90, 87)
+}
+
+.secondarycolor1 {
+    color: rgb(130, 69, 53);
+}
+
+.secondarycolor2 {
+    color: rgb(144, 165, 92);
+}
+
+.format {
+    margin: 50px;
+    padding: 50px;
+}
+
+p {
+    color: rgb(130, 69, 53)
+}
+
+h1 {
+    color: rgb(130, 69, 53)
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

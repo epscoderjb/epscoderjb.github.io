@@ -15,10 +15,11 @@ body {
     overflow: hidden;
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
 
 ul.nav li {
-    float: left
+    display: inline-block;
 }
 
 ul.nav li a {
@@ -33,7 +34,7 @@ ul.nav a:hover {
 }
 
 .active {
-    background-color: rgb(121, 168, 255);
+    background-color: lightskyblue;
 }
 
 ul {

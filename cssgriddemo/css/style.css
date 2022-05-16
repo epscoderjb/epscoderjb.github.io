@@ -1,6 +1,8 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
+    /*3 autos for 3 columns
+    */
     grid-gap: 10px;
 }
 
@@ -96,4 +98,14 @@ ul {
 ul li {
     font-size: 15px;
     text-align: left;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
 }

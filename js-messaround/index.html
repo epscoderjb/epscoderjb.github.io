@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js messing around</title>
+    <style>
+        .t {
+            text-decoration: dotted;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onclick events and alerts?</h2>
+    <a href="https://www.eastsideprep.org" target="_blank" onclick="alert('Warning, you are navigating away from my page!')">go to my school</a>
+    <br>
+
+
+    <!--Challenge #1 - do your own link with alert-->
+    <a href="https://www.openwindowschool.org" target="_blank" onclick="alert('Warning, you are navigating away from my page!')">go to my other school</a>
+
+
+    <h2>How do I change HTML content with javascript?</h2>
+    <h2>What's my secret identity?</h2>
+    <p id="secret">
+    </p>
+    <button onclick="document.getElementById('secret').innerHTML='Nana nana nana, Batman!';document.getElementById('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <!--Challenge #2 - do your own two truths and a lie-->
+    <p>Can you spot the lie?</p>
+    <ol>
+        <li>#1 - i am 15</li>
+        <li>#2 - I nearly lost my fingers in a revolving door</li>
+        <li>#3 - I am mildly allergic to peanuts</li>
+    </ol>
+    <p id="lie">
+    </p>
+    <button onclick="document.getElementById('lie').innerHTML='#1 - I am 15, is the lie!';document.getElementById('lie').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('lie').style.display='none'">Hide!</button>
+
+    <h2>How do we change an image with javascript?</h2>
+    <img src="images/pic_bulboff.gif" alt="a lightbulb that is off" id="bulb">
+    <br>
+    <button onclick="document.getElementById('bulb').src='images/pic_bulbon.gif'">Turn on light</button>
+
+
+    <!--Challenge #3 - implement off light-->
+    <br>
+    <button onclick="document.getElementById('bulb').src='images/pic_bulboff.gif'">Turn off light</button>
+
+    <br>
+    <h2>How do we change css styles with functions?</h2>
+    <p id="alice">Hi. I am Alice.</p>
+    <button onclick="shrinkAlice()">Cake: Eat Me</button>
+
+    <!--Challenge 4 - implement drink me - increase font size, change color (e.g. red)-->
+    <button onclick="growAlice()">Potion: Drink Me</button>
+
+    <br>
+    <h2>- 2 more style attributes that change via javascript code with 2 new buttons not covered in class (e.g. color, backgroundImage, etc.) with a dedicated button. </h2>
+    <ol>
+        <li id="item1">item1</li>
+        <li id="item2">item2</li>
+        <li id="item3">item3</li>
+    </ol>
+    <br>
+    <button onclick="addUnderline()">Add Underline</button>
+    <button onclick="addHighlight()">Add Highlight</button>
+    <button onclick="removeUnderLine()">Remove Effects</button>
+
+
+    <script>
+        function shrinkAlice() {
+            let aliceParagraph = document.getElementById('alice')
+            aliceParagraph.style.color = 'blue';
+            aliceParagraph.style.fontSize = '10px';
+        }
+
+        function growAlice() {
+            let aliceParagraph = document.getElementById('alice')
+            aliceParagraph.style.color = 'red';
+            aliceParagraph.style.fontSize = '50px';
+        }
+
+        function removeUnderLine() {
+            let item1 = document.getElementById('item1')
+            let item2 = document.getElementById('item2')
+            let item3 = document.getElementById('item3')
+            item1.style.textDecoration = 'none';
+            item2.style.textDecoration = 'none';
+            item3.style.textDecoration = 'none';
+            item1.style.background = 'white'
+            item2.style.background = 'white'
+            item3.style.background = 'white'
+        }
+
+        function addUnderline() {
+            let item1 = document.getElementById('item1')
+            let item2 = document.getElementById('item2')
+            let item3 = document.getElementById('item3')
+            item1.style.textDecoration = 'underline'
+            item2.style.textDecoration = 'underline'
+            item3.style.textDecoration = 'underline'
+        }
+
+        function addHighlight() {
+            let item1 = document.getElementById('item1')
+            let item2 = document.getElementById('item2')
+            let item3 = document.getElementById('item3')
+            item1.style.background = 'yellow'
+            item2.style.background = 'yellow'
+            item3.style.background = 'yellow'
+
+        }
+    </script>
+</body>
+
+</html>

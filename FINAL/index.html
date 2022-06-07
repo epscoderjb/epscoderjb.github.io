@@ -19,11 +19,71 @@
 
     <!--this is where to put your external css-->
     <!--if you put it lower it affects more code-->
-    <title>Homepage</title>
+    <title>Home Page</title>
 
     <style>
         h1 {
             color: black;
+        }
+        
+        .socials {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            border-radius: 25px;
+            border: 7px solid rgb(102, 51, 153);
+            padding: 20px;
+            width: auto;
+            height: auto;
+        }
+        
+        .mission {
+            grid-column: 2 / 3;
+            grid-row: 1 / span 2;
+            border-radius: 25px;
+            border: 7px solid rgb(98, 186, 172);
+            padding: 20px;
+            width: auto;
+            height: auto;
+        }
+        
+        .hours {
+            grid-column: 3;
+            grid-row: 1/ span 2;
+            border-radius: 25px;
+            border: 7px solid rgb(0, 82, 72);
+            padding: 20px;
+            width: auto;
+            height: auto;
+        }
+        
+        .homepic {
+            grid-column: 1;
+            grid-row: 2 / 3;
+            border-radius: 25px;
+            border: 7px solid rgb(102, 51, 153);
+            padding: 20px;
+            width: auto;
+            height: auto;
+        }
+        
+        .secondhomepic {
+            grid-column: 1;
+            grid-row: 3 / 4;
+            border-radius: 25px;
+            border: 7px solid rgb(0, 82, 72);
+            padding: 20px;
+            width: auto;
+            height: auto;
+        }
+        
+        .meet {
+            grid-column: 2 / 4;
+            grid-row: 3;
+            border-radius: 25px;
+            border: 7px solid rgb(98, 186, 172);
+            padding: 20px;
+            width: auto;
+            height: auto;
         }
         
         p {
@@ -32,7 +92,7 @@
             font-weight: 400;
             font-style: normal;
             text-align: left;
-            font-size: 10px;
+            font-size: 15px;
         }
     </style>
 
@@ -54,22 +114,19 @@
                 <!-- Links -->
                 <ul class="navbar-nav ">
                     <li class="nav-item nlink">
-                        <a class="nav-link nlink" href="# ">Home Page</a>
+                        <a class="nav-link nlink" href="index.html">Home Page</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link nlink" href="# ">About Us</a>
+                        <a class="nav-link nlink" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link nlink" href="# ">Services</a>
+                        <a class="nav-link nlink" href="services.html">Services</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link nlink" href="# ">Coupon</a>
+                        <a class="nav-link nlink" href="acupuncture.html">What is Acupuncture?</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link nlink" href="# ">What is Acupuncture?</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link nlink" href="# ">Contact Us</a>
+                        <a class="nav-link nlink" href="gallery.html">Gallery</a>
                     </li>
                 </ul>
             </div>
@@ -88,10 +145,10 @@
                     <!--w100 means 100% of the screen is covered, other ex. w60 would mean 60%-->
                 </div>
                 <div class="carousel-item carouselwidth">
-                    <img src="images/pettingdog.jpg" alt="A happy dog" class="d-block w-100">
+                    <img src="images/horses.jpg" alt="A woman taking care of horses" class="d-block w-100">
                 </div>
                 <div class="carousel-item carouselwidth">
-                    <img src="images/girlotherhorse.jpg" alt="A girl petting horse" class="d-block w-100">
+                    <img src="images/pettingdog.jpg" alt="A happy dog" class="d-block w-100">
                 </div>
             </div>
 
@@ -111,7 +168,7 @@
     <div class="grid-container ">
 
         <div class="grid-item socials ">
-            <p style="font-weight: 600;">Connect With Us!</p>
+            <p style="font-weight: 600; font-size: 30px;">Connect With Us!</p>
             <a href="https://www.facebook.com/Cougar-Mountain-Veterinary-Hospital-Wellness-Center-136545169848149/?ref=br_tf" class="fa fa-facebook" target="_blank"></a>
 
         </div>
@@ -135,17 +192,22 @@
             <p>Saturday: 8:00am to 12:00pm</p>
             <p>Sunday: Off</p>
             <br>
-            <p>Call Us! Our Number: (425) 369-9291</p>
+            <p style="font-weight: 600;">On Call Evening and Weekends (425) 369-9291</p>
             <p>Find Us! Our Address: 880 Front St. S Issaquah, WA 98027</p>
             <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.431657085283!2d-122.03618436724409!3d47.52045861258323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490659c94a1a29b%3A0xb51ba8b3024a60a7!2s880%20Front%20St%20S%2C%20Issaquah%2C%20WA%2098027!5e0!3m2!1sen!2sus!4v1653966186771!5m2!1sen!2sus"
                 width="400" height="270" style="border:2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
+            <br>
+            <br>
+            <img src="images/wellnesscenter.jpg" alt="a photo of inside the wellness center building">
         </div>
         <div class="grid-item homepic">
-            <p><img src="images/girlhorse.jpg" alt="A girl petting her horse" style="height: 500px; width:auto; margin-top: 20px;"></p>
-
+            <img src="images/girlhorse.jpg" alt="A girl petting her horse" style="height: 500px; width:auto; margin-top: 20px;">
+        </div>
+        <div class="grid-item secondhomepic">
+            <img src="images/theoffice.jpg" alt="the head Veterinarian" height="200px" width="auto" style="margin-top: 20px;">
         </div>
         <div class="grid-item meet">
             <img src="images/owner.webp" alt="" style="float: left; height: 150px; width: auto; margin: 5px;">
@@ -153,10 +215,15 @@
             <p style="text-align: justify; font-size: 15px;">Dr. Howard Friedman is the owner of Cougar Mountain Veterinary Hospital & Wellness Center, and has been practicing veterinary medicine since graduating from Michigan State University in 1990. He is a Certified Veterinarian Acupuncturist and
                 a Certified Equine Chiropractic Adjuster...Continued on the About Us Page!</p>
             <br>
-            <p style="font-size: 15px;">Check out some <a href="">photos</a> of his work!</p>
+            <p style="font-size: 15px;">Check out some photos of his work on the Gallery page!</p>
         </div>
     </div>
 
+    <br>
+
+    <div class="footer">
+        <footer style="text-align:center ;">Cougar Mountain Veterinary Hospital & Wellness Center | (425) 369-9291 | hfriedmandvm@hotmail.com | 880 Front St. S, Issaquah, WA 98027</footer>
+    </div>
 
 </body>
 

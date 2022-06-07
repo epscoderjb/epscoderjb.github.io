@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/lmn3jcs.css">
+
+    <!--this is where to put your external css-->
+    <!--if you put it lower it affects more code-->
+    <title>Gallery</title>
+
+    <style>
+        h1 {
+            color: black;
+        }
+        
+        p {
+            color: black;
+            font-family: poppins, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: left;
+            font-size: 10px;
+        }
+        
+        .gallerytitle {
+            grid-column: 1 / 4;
+            grid-row: 1 / span 1;
+            border-radius: 25px;
+            border: 7px solid rgb(0, 82, 72);
+            padding: 20px;
+            width: auto;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <br>
+    <h1 style="text-align: center;">Cougar Mountain Veterinary Hospital & Wellness Center
+    </h1>
+    <br>
+
+    <div class="container-fluid bgprimary text-white">
+
+        <!-- A grey horizontal navbar that becomes vertical on small screens -->
+        <nav class="navbar navbar-expand-sm bg-light navborder">
+
+            <div class="container-fluid ">
+                <!-- Links -->
+                <ul class="navbar-nav ">
+                    <li class="nav-item nlink">
+                        <a class="nav-link nlink" href="index.html">Home Page</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nlink" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nlink" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nlink" href="acupuncture.html">What is Acupuncture?</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nlink" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+
+    <br>
+
+    <div class="grid-container ">
+        <div class="grid-item gallerytitle">
+            <h1>Tour Our Hospital!</h1>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="carousel slide" data-bs-ride="carousel" id="second">
+
+        <div class="carousel-inner carouselwidth">
+            <!--the slideshow-->
+            <div class="carousel-item active">
+                <img src="images/tour1.webp" alt="the veterinary hospital welcome sign" class="d-block w-100 carouselwidth ">
+                <!--w100 means 100% of the screen is covered, other ex. w60 would mean 60%-->
+            </div>
+            <div class="carousel-item carouselwidth">
+                <img src="images/tour2.webp" alt="Veterinarian sitting in a chair" class="d-block w-100">
+            </div>
+            <div class="carousel-item carouselwidth">
+                <img src="images/tour3.webp" alt="a view of a crowded garden" class="d-block w-100">
+            </div>
+            <div class="carousel-item carouselwidth">
+                <img src="images/tour4.webp" alt="A view of an officespace" class="d-block w-100">
+            </div>
+            <div class="carousel-item carouselwidth">
+                <img src="images/tour5.webp" alt="Another view of an officespace" class="d-block w-100">
+            </div>
+            <div class="carousel-item carouselwidth">
+                <img src="images/tour6.webp" alt="A treatment station/hospital room" class="d-block w-100">
+            </div>
+            <div class="carousel-item carouselwidth">
+                <img src="images/tour7.webp" alt="A happy dog and Veterinarian" class="d-block w-100">
+            </div>
+        </div>
+
+        <!--carousel controls-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#second" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#second" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </div>
+
+    <br>
+    <br>
+
+    <div class="footer">
+        <footer style="text-align:center ;">Cougar Mountain Veterinary Hospital & Wellness Center | (425) 369-9291 | hfriedmandvm@hotmail.com | 880 Front St. S, Issaquah, WA 98027</footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,111 +1,145 @@
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr auto auto;
-        /*3 autos for 3 columns
+body {
+    background-color: rgb(255, 250, 222);
+}
+
+img {
+    object-fit: cover;
+    background-size: cover;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer {
+    font-family: poppins;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    /*3 autos for 3 columns
     */
-        grid-gap: 3px;
-    }
-    
-    .grid-item {
-        background-color: rgb(255, 250, 222);
-        text-align: center;
-        font-size: 30px;
-        padding: 20px;
-    }
-    
-    .socials {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        border-radius: 25px;
-        border: 7px solid rgb(102, 51, 153);
-        padding: 20px;
-        width: auto;
-        height: auto;
-    }
-    
-    .mission {
-        grid-column: 2 / 3;
-        grid-row: 1 / span 2;
-        border-radius: 25px;
-        border: 7px solid rgb(98, 186, 172);
-        padding: 20px;
-        width: auto;
-        height: auto;
-    }
-    
-    .hours {
-        grid-column: 3;
-        grid-row: 1/ span 2;
-        border-radius: 25px;
-        border: 7px solid rgb(0, 82, 72);
-        padding: 20px;
-        width: auto;
-        height: auto;
-    }
-    
-    .homepic {
-        grid-column: 1;
-        grid-row: 2 / span 2;
-        border-radius: 25px;
-        border: 7px solid rgb(102, 51, 153);
-        padding: 20px;
-        width: auto;
-        height: auto;
-    }
-    
-    .meet {
-        grid-column: 2 / 4;
-        grid-row: 3;
-        border-radius: 25px;
-        border: 7px solid rgb(98, 186, 172);
-        padding: 20px;
-        width: auto;
-        height: auto;
-    }
-    
-    .carouselwidth {
-        width: 1200px;
-        margin: auto;
-    }
-    
-    .bgprimary {
-        background-color: rgb(255, 250, 222);
-    }
-    
-    .navborder {
-        border-radius: 5px;
-        border: 5px solid black;
-    }
-    
-    .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 70px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-    }
-    
-    .fa:hover {
-        opacity: 0.75;
-    }
-    
-    .fa-facebook {
-        background: #3B5998;
-        color: white;
-    }
-    
-    .fa-google {
-        background: #dd4b39;
-        color: white;
-    }
-    
-    .nlink {
-        color: black;
-        font-family: poppins, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        margin-left: 5px;
-        margin-right: 5px;
-        font-size: 20px;
-    }
+    grid-gap: 3px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgb(255, 250, 222);
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.socials {
+    grid-column: 1/2;
+    grid-row: 1/ span 3;
+    border-radius: 25px;
+    border: 7px solid rgb(102, 51, 153);
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+
+.mission {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    border-radius: 25px;
+    border: 7px solid rgb(98, 186, 172);
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+
+.hours {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    border-radius: 25px;
+    border: 7px solid rgb(0, 82, 72);
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+
+.title {
+    grid-column: 2 / 4;
+    grid-row: 1 / span 1;
+    border-radius: 25px;
+    border: 7px solid rgb(0, 82, 72);
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+
+.custom {
+    color: black;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+
+.carouselwidth {
+    width: 1200px;
+    margin: auto;
+}
+
+.navbarwidth {
+    width: 1300px;
+    margin: auto;
+}
+
+.bgprimary {
+    background-color: rgb(255, 250, 222);
+}
+
+.navborder {
+    border-radius: 5px;
+    border: 5px solid black;
+}
+
+.fa {
+    padding: 150px;
+    font-size: 100px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.75;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.nlink {
+    color: black;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: white;
+}

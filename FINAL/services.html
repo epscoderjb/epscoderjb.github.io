@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/lmn3jcs.css">
+
+    <!--this is where to put your external css-->
+    <!--if you put it lower it affects more code-->
+    <title>Services</title>
+
+    <style>
+        h1 {
+            color: black;
+        }
+        
+        p {
+            color: black;
+            font-family: poppins, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: left;
+            font-size: 10px;
+        }
+        
+        .custom {
+            color: black;
+            font-family: poppins, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: left;
+        }
+        
+        li {
+            font-weight: 600;
+            font-style: italic;
+        }
+        
+        table {
+            font-family: poppins, sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 15px;
+        }
+        
+        button {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <br>
+    <h1 style="text-align: center;">Cougar Mountain Veterinary Hospital & Wellness Center
+    </h1>
+    <br>
+
+    <div class="container-fluid bgprimary text-white">
+
+        <!-- A grey horizontal navbar that becomes vertical on small screens -->
+        <nav class="navbar navbar-expand-sm bg-light navborder">
+
+            <div class="container-fluid ">
+                <!-- Links -->
+                <ul class="navbar-nav ">
+                    <li class="nav-item nlink">
+                        <a class="nav-link nlink" href="index.html">Home Page</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nlink" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nlink" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nlink" href="acupuncture.html">What is Acupuncture?</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nlink" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </div>
+
+    <br>
+
+    <div class="grid-container ">
+
+        <div class="grid-item socials ">
+            <h5>Want to know how to redeem this sweet coupon?</h5>
+            <img src="images/coupon.png" alt="a $10 Veterinarian coupon">
+            <br>
+            <br>
+            <h6 id="secret">
+            </h6>
+            <button onclick="document.getElementById('secret').innerHTML='It has to be your first visit and you must be a new customer!';document.getElementById('secret').style.display='block'">Reveal!</button>
+            <br>
+            <br>
+            <p style="font-size: 15px;">It expires on...</p>
+            <h6 id="secret2">
+            </h6>
+            <button onclick="document.getElementById('secret2').innerHTML='Just kidding! It does not expire!';document.getElementById('secret').style.display='block'">Reveal!</button>
+            <br>
+            <br>
+            <img src="images/vet1.jfif" alt="a Veterinarian treating a dog" height="120px" width="auto">
+
+
+
+        </div>
+
+        <div class="grid-item title">
+            <h2>Full Service Care for Your Pet in Issaquah, Washington</h2>
+        </div>
+        <div class="grid-item mission custom">
+            <h4 style="text-align: left;">Our Services</h4>
+            <ul class="custom" style="font-size: 15px;">Compassionate & Innovative | Full Service Care for Your Pet Cats, Dogs, Horses, Etc.
+                <li>Spay & Neuter</li>
+                <li>Vaccinations</li>
+                <li>Skin Disorders</li>
+                <li>Eye & Ear Problems</li>
+                <li>Equine Lameness & Chiropractic</li>
+                <li>Surgery & Dentistry</li>
+                <li>Acupuncture</li>
+                <li>Laser Therapy</li>
+                <li>Geriatrics</li>
+                <li>Nutritional Counseling</li>
+                <li>Organic Foods</li>
+                <li>Prescription Diets</li>
+                <li>Traditional Chinese Medicine</li>
+                <li>Herbal Remedies</li>
+                <li>And More!</li>
+            </ul>
+
+            <p style="font-size: 15px;">We are here to serve you as best as possible. Our goal is to meet your needs and the health care needs of your pet.
+            </p>
+        </div>
+
+        <div class="grid-item hours">
+            <h6>Send Us a Message!</h6>
+            <form>
+                <table style="text-align: center;">
+
+                    <tr>
+                        <td> <input type="mail" placeholder="Name" name=""> </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" placeholder="Phone Number" name=""> </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" placeholder="Email Address" name=""> </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" placeholder="Comments/Questions" name=""> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                        <!--This submit button is supposed to save data somewhere, and I want to retrieve that data, however this is only Web Design 1 so this is only as far as I can get due to my lack of skills.-->
+                    </tr>
+                    <tr>
+                        <td> <a href="mailto: hfriedmandvm@hotmail.com">Email Us Instead</a></td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+            <img src="images/hospitaldog.jpg" alt="an Veterinarian's dog patient" width="300px" height="auto">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="footer">
+        <footer style="text-align:center ;">Cougar Mountain Veterinary Hospital & Wellness Center | (425) 369-9291 | hfriedmandvm@hotmail.com | 880 Front St. S, Issaquah, WA 98027</footer>
+    </div>
+
+</body>
+
+</html>

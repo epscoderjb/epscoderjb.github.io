@@ -137,7 +137,7 @@
                 <li>Eye & Ear Problems</li>
                 <li>Equine Lameness & Chiropractic</li>
                 <li>Surgery & Dentistry</li>
-                <li>Acupuncture</li>
+                <li id="common">Acupuncture</li>
                 <li>Laser Therapy</li>
                 <li>Geriatrics</li>
                 <li>Nutritional Counseling</li>
@@ -150,6 +150,9 @@
 
             <p style="font-size: 15px;">We are here to serve you as best as possible. Our goal is to meet your needs and the health care needs of your pet.
             </p>
+            <button onclick="underlineCommon()" style="font-size: 15px;">Click to See The Most Common Treatment!</button>
+
+
         </div>
 
         <div class="grid-item hours">
@@ -170,7 +173,7 @@
                         <td> <input type="text" placeholder="Comments/Questions" name=""> </td>
                     </tr>
                     <tr>
-                        <td><input type="submit" value="Submit"></td>
+                        <td><input type="submit" value="Submit" onclick="alert('You Are About to Submit This Form. Continue?')"></td>
                         <!--This submit button is supposed to save data somewhere, and I want to retrieve that data, however this is only Web Design 1 so this is only as far as I can get due to my lack of skills.-->
                     </tr>
                     <tr>
@@ -188,6 +191,14 @@
     <div class="footer">
         <footer style="text-align:center ;">Cougar Mountain Veterinary Hospital & Wellness Center | (425) 369-9291 | hfriedmandvm@hotmail.com | 880 Front St. S, Issaquah, WA 98027</footer>
     </div>
+    <script>
+        function underlineCommon() {
+            let commonParagraph = document.getElementById('common')
+            commonParagraph.style.color = 'Red';
+            commonParagraph.style.fontSize = '20px';
+        }
+    </script>
+
 
 </body>
 
